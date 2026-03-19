@@ -5,14 +5,17 @@
     <!-- Szükséges meta elemek -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
 
     <!-- Kezdőállapothoz tartozó css -->
     <link rel="stylesheet" href="assets/premade.css"/>
-
-    <title>Kékhegy</title>
+    
+    <link rel="stylesheet" href="kekhegy.css">
+    
+    <title>Kékhegy Szálló</title>
 
 </head>
 
@@ -27,7 +30,12 @@
     </button>
 
     <div class="collapse navbar-collapse" id="navbarsExampleDefault">
-        Menüelemek
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item"><a class="nav-link" href="#rolunk">Rólunk</a></li>
+            <li class="nav-item"><a class="nav-link" href="#szolgaltatasok">Szolgáltatások</a></li>
+            <li class="nav-item"><a class="nav-link" href="#araink">Áraink</a></li>
+            <li class="nav-item"><a class="nav-link" href="#kapcsolat">Kapcsolat</a></li>
+        </ul>
     </div>
 </nav>
 
@@ -74,7 +82,7 @@
             <div class="col-md-4">
                 <figure class="figure">
 
-                    Kép helye
+                    <img id="kekhegyszallo-kep" src="kepek/kekhegy_szallo.png" alt="Kékhegy Szálló" class="figure-img rounded">
                     <figcaption class="figure-caption text-center">A Kékhegy Szálló</figcaption>
 
                 </figure>
@@ -136,80 +144,105 @@
     </div>
 
     <hr>
+
+    <hr>
+
+    <div class="row">
+        <div class="col-md-7">
+            <img class="img-fluid rounded mb-3 mb-md-0" src="kepek/hotel_kinti_700_300.jpg"
+                 alt="Hotel külső látkép">
+        </div>
+        <div class="col-md-5">
+            <h3>Túravezetés</h3>
+            <p>A Kékhegy még a Mátránál is magasabb, 1337 méter magasan fekvő tája és bizonyítottan különlegesen
+    jóminőségű hegyi levegője évtizedek óta méltán híres turistaparadicsom az egész évben. Vezetett gyalogtúráink egész évben rendelkezésre állnak.</p>
+            <a class="btn btn-primary btn-block" href="#">Tovább az árlistára</a>
+        </div>
+    </div>
+
+    <hr>
 </div>
 
 <!-- Áraink -->
 <section class="pricing p-5">
     <a class="anchor" id="araink"></a>
     <div class="container">
-        <div class="card mb-5">
-            <div class="card-body">
-                <h5 class="card-title text-muted text-uppercase text-center">Két fős szoba</h5>
-                <h6 class="card-price text-center">12.000 Ft.<span class="period">/nap</span></h6>
-                <hr>
-                <ul class="fa-ul">
-                    <li><span class="fa-li"><i class="fas fa-check"></i></span><strong>2 fő részére</strong>
-                    </li>
-                    <li><span class="fa-li"><i class="fas fa-check"></i></span>Franciaágy</li>
-                    <li><span class="fa-li"><i class="fas fa-check"></i></span>Ingyen wifi</li>
-                    <li><span class="fa-li"><i class="fas fa-check"></i></span>Igény szerint reggeli</li>
-                    <li><span class="fa-li"><i class="fas fa-check"></i></span>Igény szerinti teljes étkezés
-                    </li>
-                    <li><span class="fa-li"><i class="fas fa-check"></i></span>KábelTV</li>
-                    <li><span class="fa-li"><i class="fas fa-check"></i></span>30% kedvezmény a sporteszköz
-                        kölcsönzésből
-                    </li>
-                </ul>
-                <a href="#" class="btn btn-block btn-primary text-uppercase">Foglalás</a>
+        <div class="row">
+            <div class="col-12 col-md-4 mb-4">
+                <div class="card h-100">
+                    <div class="card-body">
+                        <h5 class="card-title text-muted text-uppercase text-center">Két fős szoba</h5>
+                        <h6 class="card-price text-center">12.000 Ft.<span class="period">/nap</span></h6>
+                        <hr>
+                        <ul class="fa-ul">
+                            <li><span class="fa-li"><i class="fas fa-check"></i></span><strong>2 fő részére</strong>
+                            </li>
+                            <li><span class="fa-li"><i class="fas fa-check"></i></span>Franciaágy</li>
+                            <li><span class="fa-li"><i class="fas fa-check"></i></span>Ingyen wifi</li>
+                            <li><span class="fa-li"><i class="fas fa-check"></i></span>Igény szerint reggeli</li>
+                            <li><span class="fa-li"><i class="fas fa-check"></i></span>Igény szerinti teljes étkezés
+                            </li>
+                            <li><span class="fa-li"><i class="fas fa-check"></i></span>KábelTV</li>
+                            <li><span class="fa-li"><i class="fas fa-check"></i></span>30% kedvezmény a sporteszköz
+                                kölcsönzésből
+                            </li>
+                        </ul>
+                        <a href="#" class="btn btn-block btn-primary text-uppercase">Foglalás</a>
+                    </div>
+                </div>
             </div>
-        </div>
-        <div class="card mb-5 ">
-            <div class="card-body">
-                <h5 class="card-title text-muted text-uppercase text-center">Négy személyes lakosztály</h5>
-                <h6 class="card-price text-center">20.000 Ft.<span class="period">/nap</span></h6>
-                <hr>
-                <ul class="fa-ul">
-                    <li><span class="fa-li"><i class="fas fa-check"></i></span><strong>4 fő részére</strong>
-                    </li>
-                    <li><span class="fa-li"><i class="fas fa-check"></i></span>2 külön bálószoba</li>
-                    <li><span class="fa-li"><i class="fas fa-check"></i></span>Igény szerint Francia- vagy
-                        különágy
-                    </li>
-                    <li><span class="fa-li"><i class="fas fa-check"></i></span>Igény szerint reggeli</li>
-                    <li><span class="fa-li"><i class="fas fa-check"></i></span>Igény szerinti teljes étkezés
-                    </li>
-                    <li><span class="fa-li"><i class="fas fa-check"></i></span>KábelTV</li>
-                    <li><span class="fa-li"><i class="fas fa-check"></i></span>40% kedvezmény a sporteszköz
-                        kölcsönzésből
-                    </li>
-                </ul>
-                <a href="#" class="btn btn-block btn-primary text-uppercase">Foglalás</a>
+            <div class="col-12 col-md-4 mb-4">
+                <div class="card h-100">
+                    <div class="card-body">
+                        <h5 class="card-title text-muted text-uppercase text-center">Négy személyes lakosztály</h5>
+                        <h6 class="card-price text-center">20.000 Ft.<span class="period">/nap</span></h6>
+                        <hr>
+                        <ul class="fa-ul">
+                            <li><span class="fa-li"><i class="fas fa-check"></i></span><strong>4 fő részére</strong>
+                            </li>
+                            <li><span class="fa-li"><i class="fas fa-check"></i></span>2 külön bálószoba</li>
+                            <li><span class="fa-li"><i class="fas fa-check"></i></span>Igény szerint Francia- vagy
+                                különágy
+                            </li>
+                            <li><span class="fa-li"><i class="fas fa-check"></i></span>Igény szerint reggeli</li>
+                            <li><span class="fa-li"><i class="fas fa-check"></i></span>Igény szerinti teljes étkezés
+                            </li>
+                            <li><span class="fa-li"><i class="fas fa-check"></i></span>KábelTV</li>
+                            <li><span class="fa-li"><i class="fas fa-check"></i></span>40% kedvezmény a sporteszköz
+                                kölcsönzésből
+                            </li>
+                        </ul>
+                        <a href="#" class="btn btn-block btn-primary text-uppercase">Foglalás</a>
+                    </div>
+                </div>
             </div>
-        </div>
-        <div class="card mb-5 ">
-            <div class="card-body">
-                <h5 class="card-title text-muted text-uppercase text-center">Hat személyes lakosztály
-                    <span class="badge badge-secondary">$$</span>
-                </h5>
-                <h6 class="card-price text-center">24.000 Ft.<span class="period">/nap</span></h6>
-                <hr>
-                <ul class="fa-ul">
-                    <li><span class="fa-li"><i class="fas fa-check"></i></span><strong>6 fő részére</strong>
+            <div class="col-12 col-md-4 mb-4">
+                <div class="card h-100">
+                    <div class="card-body">
+                        <h5 class="card-title text-muted text-uppercase text-center">Hat személyes lakosztály
+                            <span class="badge badge-secondary">$$</span>
+                        </h5>
+                        <h6 class="card-price text-center">24.000 Ft.<span class="period">/nap</span></h6>
+                        <hr>
+                        <ul class="fa-ul">
+                            <li><span class="fa-li"><i class="fas fa-check"></i></span><strong>6 fő részére</strong>
 
-                    </li>
-                    <li><span class="fa-li"><i class="fas fa-check"></i></span>3 külön bálószoba</li>
-                    <li><span class="fa-li"><i class="fas fa-check"></i></span>Igény szerint Francia- vagy
-                        különágy
-                    </li>
-                    <li><span class="fa-li"><i class="fas fa-check"></i></span>Igény szerint reggeli</li>
-                    <li><span class="fa-li"><i class="fas fa-check"></i></span>Igény szerinti teljes étkezés
-                    </li>
-                    <li><span class="fa-li"><i class="fas fa-check"></i></span>KábelTV</li>
-                    <li><span class="fa-li"><i class="fas fa-check"></i></span>50% kedvezmény a sporteszköz
-                        kölcsönzésből
-                    </li>
-                </ul>
-                <a href="#" class="btn btn-block btn-primary text-uppercase">Foglalás</a>
+                            </li>
+                            <li><span class="fa-li"><i class="fas fa-check"></i></span>3 külön bálószoba</li>
+                            <li><span class="fa-li"><i class="fas fa-check"></i></span>Igény szerint Francia- vagy
+                                különágy
+                            </li>
+                            <li><span class="fa-li"><i class="fas fa-check"></i></span>Igény szerint reggeli</li>
+                            <li><span class="fa-li"><i class="fas fa-check"></i></span>Igény szerinti teljes étkezés
+                            </li>
+                            <li><span class="fa-li"><i class="fas fa-check"></i></span>KábelTV</li>
+                            <li><span class="fa-li"><i class="fas fa-check"></i></span>50% kedvezmény a sporteszköz
+                                kölcsönzésből
+                            </li>
+                        </ul>
+                        <a href="#" class="btn btn-block btn-primary text-uppercase">Foglalás</a>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
